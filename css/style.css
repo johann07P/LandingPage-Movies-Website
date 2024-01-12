@@ -49,6 +49,9 @@ header{
     z-index: 100;
     
 }
+main{
+    height:100vh;
+}
 /* nav  */
 .nav{
     display: flex;
@@ -137,10 +140,10 @@ header{
 /***** Home  ******/
 .home{
 position: relative;
-   min-height:45rem;
+   min-height:47rem;
    display: flex;
    align-items: center;
-   margin-top: 0.5rem;
+   margin-top: 8rem !important;
    border-radius: 0.5rem;
 }
 .home-img{
@@ -149,7 +152,7 @@ position: relative;
     height: 100%;
     z-index: -1;
     object-fit: cover;
-    border-radius: 1.5rem;
+    border-radius: 2.5rem;
 }
 .home-text{
     padding-left: 5rem;
@@ -187,4 +190,20 @@ background-color: var(--hover-color);
 }
 .watch-btn span{
     color: var(--Text-color);
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Container-color);
+    padding: 8px 14px;
+    border: 2px solid hsl(200 100% 99% / 5%);
+    border-radius: 5px;
+
+    
+}
+.heading-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    
 }
