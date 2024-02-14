@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Link del css  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- link swiper  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- link del favicon  -->
     <link rel="stylesheet" href="img/fav-icon.png" type="image/x-icon">
     <!-- box icon  -->
@@ -26,47 +28,47 @@
 <body>
     <!-- Header -->
     <main>
-    <header>
-        <!-- navegacion -->
-        <div class="nav container">
-            <!-- logo -->
-            <a href="index.html" class="logo">
-                Movie<span>Vel</span>
-            </a>
-            <!-- search Box -->
-            <div class="search-box">
-                <input type="search" name="" id="search-input" placeholder="Search Movie">
-                <i class='bx bx-search'></i>
+        <header>
+            <!-- navegacion -->
+            <div class="nav container">
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    Movie<span>Vel</span>
+                </a>
+                <!-- search Box -->
+                <div class="search-box">
+                    <input type="search" name="" id="search-input" placeholder="Search Movie">
+                    <i class='bx bx-search'></i>
+                </div>
+                <!-- Users -->
+                <a href="#" class="user">
+                    <img src="img/user.jpg" class="user-img" alt="">
+                </a>
             </div>
-            <!-- Users -->
-            <a href="#" class="user">
-                <img src="img/user.jpg" class="user-img" alt="">
-            </a>
-        </div>
 
-        <div class="navbar">
-            <a href="#Home" class="nav-link">
-                <i class='bx bx-home'></i>
-                <span class="nav-link-title">Home</span>
-            </a>
-            <a href="#Trending" class="nav-link">
-                <i class='bx bxs-hot'></i>
-                <span class="nav-link-title">Trending</span>
-            </a>
-            <a href="#Explore" class="nav-link">
-                <i class='bx bx-compass'></i>
-                <span class="nav-link-title">Explore</span>
-            </a>
-            <a href="#Movies" class="nav-link">
-                <i class='bx bx-tv'></i>
-                <span class="nav-link-title">Movies</span>
-            </a>
-            <a href="#Favorites" class="nav-link">
-                <i class='bx bxs-heart-circle'></i>
-                <span class="nav-link-title">Favorites</span>
-            </a>
-        </div>
-    </header>
+            <div class="navbar">
+                <a href="#Home" class="nav-link">
+                    <i class='bx bx-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                <a href="#Trending" class="nav-link">
+                    <i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+                <a href="#Explore" class="nav-link">
+                    <i class='bx bx-compass'></i>
+                    <span class="nav-link-title">Explore</span>
+                </a>
+                <a href="#Movies" class="nav-link">
+                    <i class='bx bx-tv'></i>
+                    <span class="nav-link-title">Movies</span>
+                </a>
+                <a href="#Favorites" class="nav-link">
+                    <i class='bx bxs-heart-circle'></i>
+                    <span class="nav-link-title">Favorites</span>
+                </a>
+            </div>
+        </header>
 
         <section class="home container" id="home">
             <img src="img/home-background.png" class="home-img" alt="">
@@ -81,35 +83,160 @@
             </div>
         </section>
     </main>
-        <!-- FINAL HOME  -->
+    <!-- FINAL HOME  -->
 
 
-        <!-- POPULAR SECTION START  -->
+    <!-- POPULAR SECTION START  -->
 
-        <section class="popular container" id="popular">
+    <section class="popular container" id="popular">
 
 
-            <!-- Heading -->
-            <div class="heading">
-                <h2 class="heading-title">Popular Movie</h2>
+        <!-- Heading -->
+        <div class="heading">
+            <h2 class="heading-title container">Popular Movie</h2>
+            <!-- swiper buttons -->
+            <div class="swiper-btn">
+             <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
             </div>
-            <!-- content  -->
-            <div class="popular-content">
+        </div>
+        <!-- content  -->
+        <div class="popular-content swiper">
+            <div class="swiper-wrapper">
+                <!-- movies box 1 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-1.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Spider man: No way Home</h2> 
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play-circle'></i>
+                            
+                        </a>
+                    </div>
+                    </div> 
+                </div>
+                <!-- movies box 2 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-2.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Jungle cruise</h2> 
+                        <span class="movie-type">Action/Aventure</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play-circle'></i>
+                            
+                        </a>
+                    </div>
+                    </div> 
+                </div>
+                <!-- movies box 3 -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-3.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Loki</h2> 
+                        <span class="movie-type">Action/Drama</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play-circle'></i>
+                            
+                        </a>
+                    </div>
+                    </div> 
+                </div>
+                 <!-- movies box 4  -->
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-4.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">El juego del Calamar</h2> 
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play-circle'></i>
+                            
+                        </a>
+                    </div>
+                    </div> 
+                </div>
+                 <!-- movies box 4  -->
+                 <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-5.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Falcon y el Soldado del Invierno/</h2> 
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play-circle'></i>
+                            
+                        </a>
+                    </div>
+                    </div> 
+                </div>
+                 <!-- movies box 4  -->
+                 <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-6.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">hawkeye</h2> 
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play-circle'></i>
+                            
+                        </a>
+                    </div>
+                    </div> 
+                </div>
+                 <!-- movies box 4  -->
+                 <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-7.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Agentes de Shield</h2> 
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play-circle'></i>
+                            
+                        </a>
+                    </div>
+                    </div> 
+                </div>
+                 <!-- movies box 4  -->
+                 <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="img/popular-movie-8.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="movie-title">Flash Armagedon</h2> 
+                        <span class="movie-type">Action</span>
+                        <a href="#" class="watch-btn play-btn">
+                            <i class='bx bx-play-circle'></i>
+                            
+                        </a>
+                    </div>
+                    </div> 
+                </div>
                 
-            </div>
+                
 
-        </section>
+                
+              </div>
+              
+        </div>
 
-        <!-- POPULAR SECTION END  -->
+    </section>
 
-   
-
-
-
-
-
+    <!-- POPULAR SECTION END  -->
 
 
+
+
+
+
+
+
+<!-- link de swiper.js -->
+<script src="js/swiper-bundle.min.js"></script>
 
     <!-- link del js -->
     <script src="js/main.js"></script>
